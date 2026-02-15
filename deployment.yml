@@ -1,0 +1,20 @@
+piVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deploy1-fronted 
+spec:
+  # modify replicas according to your case
+  replicas: 3
+  selector:
+    matchLabels:
+      apptype: frontend
+      environment: prod 
+  template:
+    metadata:
+      labels:
+        apptype: frontend
+        environment: prod
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.14.2 
