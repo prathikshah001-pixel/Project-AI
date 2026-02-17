@@ -1,20 +1,19 @@
-piVersion: apps/v1
+apiversion: apps/v1
 kind: Deployment
 metadata:
-  name: deploy1-fronted 
+  name: project-ai-deployment
 spec:
-  # modify replicas according to your case
   replicas: 3
   selector:
     matchLabels:
-      apptype: frontend
-      environment: prod 
+      app: project-ai
   template:
     metadata:
       labels:
-        apptype: frontend
-        environment: prod
+        app: project-ai
     spec:
       containers:
-      - name: nginx
-        image: nginx:1.14.2
+      - name: project-ai-container
+        image: your-docker-image:latest
+        ports:
+        - containerPort: 8080
