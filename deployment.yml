@@ -1,9 +1,5 @@
 apiversion: apps/v1
 kind: Deployment
 name: project-ai-deployment
-dimple
-dimple1
-dimpl2
-prathik
-mishay
-goodebye
+changes done
+
