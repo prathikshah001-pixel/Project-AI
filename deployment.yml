@@ -1,19 +1,5 @@
 apiversion: apps/v1
 kind: Deployment
+name: project-ai-deployment
 metadata:
-  name: project-ai-deployment
-spec:
-  replicas: 3
-  selector:
-    matchLabels:
-      app: project-ai
-  template:
-    metadata:
-      labels:
-        app: project-ai
-    spec:
-      containers:
-      - name: project-ai-container
-        image: your-docker-image:latest
-        ports:
-        - containerPort: 8080
+  name: project-ai-deployment 
