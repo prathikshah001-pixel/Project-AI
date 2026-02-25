@@ -1,6 +1,6 @@
 apiversion: apps/v1
 kind: Deployment
 name: project-ai-deployment
-metadata:
-  name: hello
-  
+dimple
+dimple1
+dimpl2
